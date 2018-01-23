@@ -1,0 +1,27 @@
+
+for q in `seq 1 8 ` ; do
+
+cat > input.$q << EOF
+phonons of AlAs
+ &inputph
+  tr2_ph=1.0d-12,
+  prefix='alas',
+  ldisp=.true.,
+  nq1=4, nq2=4, nq3=4
+  start_q=$q
+  last_q=$q
+  amass(1)=26.98,
+  amass(2)=74.92,
+  outdir="$TMP_DIR/$q",
+  fildyn='alas.dyn',
+ /
+EOF
+
+mkdir $TMP_DIR/$q
+cp -r $TMP_DIR/alas.* $TMP_DIR/$q
+
+$ECHO "  running the phonon calculation for q= " $q " ...\c"
+$PH_COMMAND < input.$q > output.$q
+$ECHO " done"
+
+done

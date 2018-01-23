@@ -1,0 +1,21 @@
+
+     Program MATDYN v.5.4.0 starts on 23Jan2018 at 15:45:41 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    20 processors
+     R & G space division:  proc/nbgrp/npool/nimage =      20
+ 
+     MATDYN       :     0.05s CPU         0.23s WALL
+
+ 
+   This run was terminated on:  15:45:41  23Jan2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
