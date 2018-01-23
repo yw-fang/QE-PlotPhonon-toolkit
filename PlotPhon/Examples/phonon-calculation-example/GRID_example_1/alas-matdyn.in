@@ -1,0 +1,12 @@
+ &input
+    asr='simple',  amass(1)=26.98, amass(2)=74.922,
+    flfrc='alas444.fc', flfrq='alas.freq', q_in_band_form=.true.,
+ /
+ 6
+  0.000 0.0 0.0   40
+  1.0   0.0 0.0   20
+  1.0   0.5 0.0   20
+  1.0   1.0 0.0   40
+  0.00  0.0 0.0   40
+  0.5   0.5 0.5    1
+
