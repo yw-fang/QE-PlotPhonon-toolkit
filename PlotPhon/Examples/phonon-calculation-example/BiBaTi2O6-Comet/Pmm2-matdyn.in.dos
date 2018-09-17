@@ -1,0 +1,11 @@
+ &input
+    asr='simple',  
+  amass(1)=208.980000,
+  amass(2)=137.327000,
+  amass(3)=47.867000,
+  amass(4)=15.999400,
+    flfrc='LWN.525.fc', flfrq='LWN.525.freq',
+!   la2F=.true., 
+    dos=.true.
+    fldos='phonon.dos', nk1=16, nk2=10, nk3=16, ndos=1000
+ /

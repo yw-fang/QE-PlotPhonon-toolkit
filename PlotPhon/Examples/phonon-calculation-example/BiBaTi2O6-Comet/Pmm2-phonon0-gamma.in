@@ -1,0 +1,18 @@
+
+ &inputph
+  tr2_ph=1.0d-17,
+  prefix = 'Pmm2',
+  fildvscf='Pmm2dv',
+  alpha_mix =  0.2,
+  amass(1)=208.980000,
+  amass(2)=137.327000,
+  amass(3)=47.867000,
+  amass(4)=15.999400,
+  outdir = './tmp'
+  fildyn='Pmm2.dyn',
+  trans=.true.,
+  ldisp=.true.
+  nq1=5, nq2=2, nq3=5
+  start_q=1
+  last_q=1
+/

@@ -1,0 +1,6 @@
+ &input
+   zasr='simple', 
+   fildyn='Pmm2.dyn',
+   flfrc='LWN.525.fc',
+   !la2F=.true. 
+ /

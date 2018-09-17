@@ -1,0 +1,63 @@
+
+&control
+ calculation = 'scf',
+ verbosity = 'high',
+ restart_mode = 'from_scratch',
+ prefix = 'Pmm2',
+ tstress = .false.,
+ tprnfor = .false.,
+ pseudo_dir = '/home/ywfang/pwwork/BiBaTi2O6/pot/pbesol/',
+ outdir = './tmp'
+ etot_conv_thr=1.0D-9,
+ forc_conv_thr=1.0D-7,
+! nstep=200
+/ 
+
+&system
+ ibrav=8,
+ celldm(1) = 7.554673, celldm(2) = 1.988363, celldm(3) = 0.996311,
+ nat=10, ntyp=4,
+ ecutwfc=50,
+ ecutrho=500,
+ occupations='smearing', smearing='mp', degauss=0.02
+/
+
+&electrons
+ diagonalization='david',
+ mixing_mode = 'plain',
+ mixing_beta = 0.7,
+ conv_thr =  1.0d-8,
+ electron_maxstep = 200,
+/ 
+!
+!&ions
+!  ion_dynamics = 'bfgs',
+!  ion_positions = 'from_input',
+!  pot_extrapolation = "second_order",
+!  wfc_extrapolation = "second_order",
+!/
+
+&cell
+  press = 0
+/
+
+ATOMIC_SPECIES
+ Bi 208.980000 Bi.pbesol-dn-rrkjus_psl.1.0.0.UPF
+ Ba 137.327000 Ba.pbesol-spn-rrkjus_psl.1.0.0.UPF
+ Ti 47.867000 Ti.pbesol-spn-kjpaw_psl.1.0.0.UPF
+ O 15.999400 O.pbesol-n-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+Bi       0.000000000   0.500000000   0.394081214
+Ba       0.000000000   0.000000000   0.267054440
+Ti       0.500000000   0.246847114   0.776040887
+Ti       0.500000000   0.753152886   0.776040887
+O        0.000000000   0.263467519   0.743664933
+O        0.000000000   0.736532481   0.743664933
+O        0.500000000   0.254198989   0.255050041
+O        0.500000000   0.745801011   0.255050041
+O        0.500000000   0.000000000   0.764122383
+O        0.500000000   0.500000000   0.715410241
+
+K_POINTS automatic
+7 3 7 0 0 0
