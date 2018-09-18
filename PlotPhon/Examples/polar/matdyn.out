@@ -1,0 +1,31 @@
+
+     Program MATDYN v.6.2 (svn rev. 14038) starts on 17Sep2018 at 18:10:35 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+Norm of the difference between old and new effective charges:    0.00000000000000000000
+Norm of the difference between old and new force-constants:   0.00024870166529304769
+     Message from routine matdyn:
+     Z* not found in file LWN.525.fc, TO-LO splitting at q=0 will be absent!
+     A direction for q was not specified:TO-LO splitting will be absent
+     Message from routine matdyn:
+     Z* not found in file LWN.525.fc, TO-LO splitting at q=0 will be absent!
+     A direction for q was not specified:TO-LO splitting will be absent
+ 
+     MATDYN       :     2.71s CPU         3.27s WALL
+
+ 
+   This run was terminated on:  18:10:38  17Sep2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
